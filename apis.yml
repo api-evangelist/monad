@@ -1,0 +1,259 @@
+aid: monad
+url: https://raw.githubusercontent.com/api-evangelist/monad/refs/heads/main/apis.yml
+name: Monad
+kind: company
+description: >-
+  Monad is a high-performance EVM-compatible Layer 1 blockchain designed for
+  parallel execution and pipelined consensus, targeting 10,000 TPS with 1-second
+  block time and single-slot finality while remaining fully Ethereum
+  bytecode-compatible. Mainnet (chain ID 143, native token MON) launched on
+  November 24, 2025 alongside a long-running public testnet. Developer surfaces
+  include public JSON-RPC endpoints (rpc.monad.xyz, testnet-rpc.monad.xyz), an
+  Ethereum-compatible JSON-RPC plus Monad-specific extensions, MonadVision,
+  Monadscan, and Socialscan explorers, native EVM tooling (Foundry, Hardhat,
+  Remix), indexers (GhostGraph, QuickNode Streams, Envio HyperIndex), and a
+  Staking API and Machine Payments Protocol.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Blockchain
+  - Layer 1
+  - EVM
+  - High Performance
+  - Parallel Execution
+  - JSON-RPC
+  - MonadBFT
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+  - aid: monad:mainnet-rpc
+    name: Monad Mainnet JSON-RPC
+    description: >-
+      Public Ethereum-compatible JSON-RPC endpoint for Monad mainnet (chain ID
+      143, native token MON). Hosted on QuickNode infrastructure with a 25
+      requests/sec default rate limit; alternative public endpoints are
+      published in the docs.
+    humanURL: https://docs.monad.xyz/developer-essentials/network-information
+    baseURL: https://rpc.monad.xyz
+    tags:
+      - JSON-RPC
+      - Mainnet
+      - EVM
+    properties:
+      - type: Documentation
+        url: https://docs.monad.xyz/developer-essentials/network-information
+      - type: APIReference
+        url: https://docs.monad.xyz/reference/json-rpc/api
+  - aid: monad:testnet-rpc
+    name: Monad Testnet JSON-RPC
+    description: >-
+      Public JSON-RPC endpoint for the Monad public testnet, used for
+      application development, integration testing, and validator software
+      validation before deploying to mainnet.
+    humanURL: https://docs.monad.xyz/developer-essentials/testnets
+    baseURL: https://testnet-rpc.monad.xyz
+    tags:
+      - JSON-RPC
+      - Testnet
+      - EVM
+    properties:
+      - type: Documentation
+        url: https://docs.monad.xyz/developer-essentials/testnets
+      - type: APIReference
+        url: https://docs.monad.xyz/reference/json-rpc/api
+  - aid: monad:json-rpc-api
+    name: Monad JSON-RPC API
+    description: >-
+      Full JSON-RPC method reference — standard Ethereum eth_*, net_*, web3_*,
+      debug_*, and trace_* methods plus Monad-specific extensions and notes on
+      method differences, rate limits, and error codes.
+    humanURL: https://docs.monad.xyz/reference/json-rpc/api
+    baseURL: https://docs.monad.xyz/reference/json-rpc/api
+    tags:
+      - JSON-RPC
+      - Reference
+      - EVM
+    properties:
+      - type: Documentation
+        url: https://docs.monad.xyz/reference/json-rpc/overview
+      - type: APIReference
+        url: https://docs.monad.xyz/reference/json-rpc/api
+      - type: Playground
+        url: https://docs.monad.xyz/reference/json-rpc/playground
+  - aid: monad:staking-api
+    name: Monad Staking API
+    description: >-
+      API for delegating MON to validators, querying validator stats,
+      undelegating, and reading rewards. Backs delegation UI and external
+      staking integrations.
+    humanURL: https://docs.monad.xyz/reference/staking/api
+    baseURL: https://docs.monad.xyz/reference/staking/api
+    tags:
+      - Staking
+      - Validators
+      - Rewards
+    properties:
+      - type: Documentation
+        url: https://docs.monad.xyz/reference/staking/api
+  - aid: monad:machine-payments-protocol
+    name: Monad Machine Payments Protocol
+    description: >-
+      Protocol specification for programmable machine-to-machine payments on
+      Monad, including account, channel, and settlement primitives.
+    humanURL: https://docs.monad.xyz/reference/mpp/overview
+    baseURL: https://docs.monad.xyz/reference/mpp/overview
+    tags:
+      - MPP
+      - Machine Payments
+      - Protocol
+    properties:
+      - type: Documentation
+        url: https://docs.monad.xyz/reference/mpp/overview
+  - aid: monad:monadvision-explorer
+    name: MonadVision Block Explorer
+    description: >-
+      Block explorer for Monad mainnet — transaction, block, contract, and
+      token lookup with Solidity source verification.
+    humanURL: https://monadvision.com
+    baseURL: https://monadvision.com
+    tags:
+      - Explorer
+      - MonadVision
+      - Mainnet
+    properties:
+      - type: Documentation
+        url: https://monadvision.com
+  - aid: monad:monadscan-explorer
+    name: Monadscan Block Explorer
+    description: >-
+      Etherscan-style Monadscan block explorer covering Monad mainnet, with
+      transaction, address, contract, and token analytics.
+    humanURL: https://monadscan.com
+    baseURL: https://monadscan.com
+    tags:
+      - Explorer
+      - Monadscan
+      - Mainnet
+    properties:
+      - type: Documentation
+        url: https://monadscan.com
+  - aid: monad:socialscan-explorer
+    name: Socialscan Monad Explorer
+    description: >-
+      Socialscan instance for Monad, offering an alternative explorer view with
+      social and on-chain identity overlays.
+    humanURL: https://monad.socialscan.io
+    baseURL: https://monad.socialscan.io
+    tags:
+      - Explorer
+      - Socialscan
+    properties:
+      - type: Documentation
+        url: https://monad.socialscan.io
+  - aid: monad:foundry-toolkit
+    name: Monad Foundry Toolkit
+    description: >-
+      Monad-flavored Foundry toolkit (forge, cast, anvil) for compiling,
+      deploying, scripting, and testing Solidity against Monad mainnet and
+      testnet.
+    humanURL: https://docs.monad.xyz/tooling-and-infra/toolkits/monad-foundry
+    baseURL: https://docs.monad.xyz/tooling-and-infra/toolkits/monad-foundry
+    tags:
+      - Foundry
+      - Tooling
+      - Solidity
+    properties:
+      - type: Documentation
+        url: https://docs.monad.xyz/tooling-and-infra/toolkits/monad-foundry
+  - aid: monad:rpc-providers
+    name: Monad RPC Providers
+    description: >-
+      Registry of third-party RPC providers supporting Monad — QuickNode,
+      Alchemy, Goldsky Edge, Ankr, MonadInfra — with rate-limit and
+      method-availability differences documented.
+    humanURL: https://docs.monad.xyz/tooling-and-infra/rpc-providers
+    baseURL: https://docs.monad.xyz/tooling-and-infra/rpc-providers
+    tags:
+      - RPC
+      - Providers
+      - Infrastructure
+    properties:
+      - type: Documentation
+        url: https://docs.monad.xyz/tooling-and-infra/rpc-providers
+  - aid: monad:indexers
+    name: Monad Indexers
+    description: >-
+      Indexing options for Monad data — GhostGraph (Graph-style subgraphs),
+      QuickNode Streams, and Envio HyperIndex — for building data backends and
+      analytics on top of Monad.
+    humanURL: https://docs.monad.xyz/tooling-and-infra/indexers
+    baseURL: https://docs.monad.xyz/tooling-and-infra/indexers
+    tags:
+      - Indexers
+      - GraphQL
+      - Data
+    properties:
+      - type: Documentation
+        url: https://docs.monad.xyz/tooling-and-infra/indexers
+  - aid: monad:bridges
+    name: Monad Bridges
+    description: >-
+      Token bridges and cross-chain messaging integrations for moving assets
+      between Ethereum, other chains, and Monad.
+    humanURL: https://docs.monad.xyz/developer-essentials/network-information/tokens-and-bridges
+    baseURL: https://docs.monad.xyz/developer-essentials/network-information/tokens-and-bridges
+    tags:
+      - Bridge
+      - Cross-Chain
+      - Tokens
+    properties:
+      - type: Documentation
+        url: https://docs.monad.xyz/developer-essentials/network-information/tokens-and-bridges
+common:
+  - type: Website
+    url: https://www.monad.xyz
+  - type: Documentation
+    url: https://docs.monad.xyz
+  - type: GettingStarted
+    url: https://docs.monad.xyz/developer-essentials/network-information
+  - type: APIReference
+    url: https://docs.monad.xyz/reference/json-rpc/api
+  - type: Playground
+    url: https://docs.monad.xyz/reference/json-rpc/playground
+  - type: App
+    url: https://app.monad.xyz
+  - type: Visualization
+    url: https://gmonads.com
+  - type: Explorer
+    url: https://monadvision.com
+  - type: GitHub
+    url: https://github.com/monad-crypto
+  - type: Blog
+    url: https://www.monad.xyz/blog
+  - type: Twitter
+    url: https://x.com/monad
+  - type: Discord
+    url: https://discord.gg/monad
+  - type: Telegram
+    url: https://t.me/monad_xyz
+  - type: PrivacyPolicy
+    url: https://www.monad.xyz/privacy
+  - type: TermsOfService
+    url: https://www.monad.xyz/terms
+integrations:
+  - name: Foundry
+  - name: Hardhat
+  - name: Remix
+  - name: QuickNode
+  - name: Alchemy
+  - name: Goldsky
+  - name: Ankr
+  - name: Envio
+  - name: GhostGraph
+  - name: LayerZero
+  - name: Wormhole
+  - name: Pyth
+  - name: Chainlink
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
