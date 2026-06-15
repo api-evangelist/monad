@@ -1,0 +1,149 @@
+{
+  "item": [
+    {
+      "id": "523c5724-b6f0-4dad-9941-28eb3e06a537",
+      "name": "JSON-RPC call",
+      "request": {
+        "name": "JSON-RPC call",
+        "description": {
+          "content": "Invoke a JSON-RPC method against the Monad node. Supported methods\ninclude Ethereum-standard `eth_*`, `net_*`, `web3_*`, plus\nMonad-specific extensions and `debug_*`/`trace_*` methods (subject to\nendpoint-specific availability — Alchemy disables `debug_`/`trace_`,\nAnkr disables `debug_`).\n",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            ""
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"jsonrpc\": \"<string>\",\n  \"method\": \"<string>\",\n  \"id\": \"<integer>\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "id": "8e591fe9-da07-42be-aa7f-39ed9fcafbc5",
+          "name": "JSON-RPC response (success or JSON-RPC error)",
+          "originalRequest": {
+            "url": {
+              "path": [
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"eth_blockNumber\",\n  \"params\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"jsonrpc\": \"string\",\n  \"id\": 9741,\n  \"result\": \"\",\n  \"error\": {\n    \"code\": 2969,\n    \"message\": \"string\",\n    \"data\": \"\"\n  }\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        },
+        {
+          "id": "bb4f0d5e-815d-4ef8-946d-4e4a7d35e84d",
+          "name": "Rate limit exceeded",
+          "originalRequest": {
+            "url": {
+              "path": [
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"eth_blockNumber\",\n  \"params\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "Too Many Requests",
+          "code": 429,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://rpc.monad.xyz",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "614aa6a5-b415-477e-840d-5e0e9310583f",
+    "name": "Monad JSON-RPC API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Ethereum-compatible JSON-RPC API for the Monad blockchain. Mainnet (chain\nID 143, native token MON) is reachable at `https://rpc.monad.xyz`; the\npublic testnet is reachable at `https://testnet-rpc.monad.xyz`. WebSocket\nvariants of each endpoint are available via the `wss://` scheme.\n\nAll JSON-RPC requests are made by `POST`ing a JSON body to the RPC URL.\nPublic endpoints are unauthenticated and rate limited (mainnet default is\n25 requests per second on `rpc.monad.xyz`).\n\n\nContact Support:\n Name: Monad",
+      "type": "text/plain"
+    }
+  }
+}

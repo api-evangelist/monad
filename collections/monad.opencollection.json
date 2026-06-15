@@ -1,0 +1,25 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Monad JSON-RPC API",
+    "version": "2026-05"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "JSON-RPC call",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rpc.monad.xyz/",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Invoke a JSON-RPC method against the Monad node. Supported methods\ninclude Ethereum-standard `eth_*`, `net_*`, `web3_*`, plus\nMonad-specific extensions and `debug_*`/`trace_*` methods (subject to\nendpoint-specific availability — Alchemy disables `debug_`/`trace_`,\nAnkr disables `debug_`).\n"
+    }
+  ],
+  "bundled": true
+}
