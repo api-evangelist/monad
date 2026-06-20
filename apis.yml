@@ -13,7 +13,7 @@ description: >-
   Monadscan, and Socialscan explorers, native EVM tooling (Foundry, Hardhat,
   Remix), indexers (GhostGraph, QuickNode Streams, Envio HyperIndex), and a
   Staking API and Machine Payments Protocol.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Blockchain
 - Layer 1
