@@ -242,7 +242,7 @@ common:
   url: https://www.monad.xyz/privacy
 - type: TermsOfService
   url: https://www.monad.xyz/terms
-- type: LLMsTxt
+- type: LlmsText
   url: https://docs.monad.xyz/llms.txt
 integrations:
 - name: Foundry
