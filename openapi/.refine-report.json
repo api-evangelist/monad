@@ -1,0 +1,14 @@
+{
+  "provider": "monad",
+  "sources": [
+    "monad-monad-json-rpc-api-api-openapi.yml"
+  ],
+  "outputs": [
+    "monad-monad-json-rpc-api-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
