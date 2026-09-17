@@ -42,6 +42,7 @@ tags:
 - Parallel Execution
 - JSON-RPC
 - MonadBFT
+- Monad
 created: '2026-05-23'
 modified: '2026-09-16'
 specificationVersion: '0.23'
