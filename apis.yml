@@ -103,6 +103,10 @@ apis:
   baseURL: https://docs.monad.xyz/reference/staking/api
   tags:
   - Staking
+  - Validator
+  - Rewards
+  tags_raw:
+  - Staking
   - Validators
   - Rewards
   properties:
