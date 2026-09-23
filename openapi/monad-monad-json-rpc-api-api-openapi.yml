@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Monad JSON-RPC Monad JSON RPC API API
+  title: Monad JSON-RPC Monad JSON RPC API
   version: 2026-05
   description: 'Ethereum-compatible JSON-RPC API for the Monad blockchain. Mainnet (chain
 
@@ -15,9 +15,7 @@ info:
 
     Public endpoints are unauthenticated and rate limited (mainnet default is
 
-    25 requests per second on `rpc.monad.xyz`).
-
-    '
+    25 requests per second on `rpc.monad.xyz`).'
   contact:
     name: Monad
     url: https://docs.monad.xyz
@@ -47,9 +45,7 @@ paths:
 
         endpoint-specific availability — Alchemy disables `debug_`/`trace_`,
 
-        Ankr disables `debug_`).
-
-        '
+        Ankr disables `debug_`).'
       requestBody:
         required: true
         content:
