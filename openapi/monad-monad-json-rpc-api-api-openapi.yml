@@ -178,29 +178,6 @@ paths:
       - Monad JSON RPC API
 components:
   schemas:
-    JsonRpcResponse:
-      type: object
-      required:
-      - jsonrpc
-      - id
-      properties:
-        jsonrpc:
-          type: string
-          const: '2.0'
-        id:
-          oneOf:
-          - type: integer
-          - type: string
-          - type: 'null'
-        result: {}
-        error:
-          type: object
-          properties:
-            code:
-              type: integer
-            message:
-              type: string
-            data: {}
     JsonRpcRequest:
       type: object
       required:
@@ -245,3 +222,26 @@ components:
           oneOf:
           - type: integer
           - type: string
+    JsonRpcResponse:
+      type: object
+      required:
+      - jsonrpc
+      - id
+      properties:
+        jsonrpc:
+          type: string
+          const: '2.0'
+        id:
+          oneOf:
+          - type: integer
+          - type: string
+          - type: 'null'
+        result: {}
+        error:
+          type: object
+          properties:
+            code:
+              type: integer
+            message:
+              type: string
+            data: {}
