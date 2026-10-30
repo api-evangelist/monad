@@ -1,4 +1,4 @@
-# Monad (monad)
+# Monad
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,276 +66,144 @@
 
 Monad is a high-performance EVM-compatible Layer 1 blockchain designed for parallel execution and pipelined consensus, targeting 10,000 TPS with 1-second block time and single-slot finality while remaining fully Ethereum bytecode-compatible. Mainnet (chain ID 143, native token MON) launched on November 24, 2025 alongside a long-running public testnet. Developer surfaces include public JSON-RPC endpoints (rpc.monad.xyz, testnet-rpc.monad.xyz), an Ethereum-compatible JSON-RPC plus Monad-specific extensions, MonadVision, Monadscan, and Socialscan explorers, native EVM tooling (Foundry, Hardhat, Remix), indexers (GhostGraph, QuickNode Streams, Envio HyperIndex), and a Staking API and Machine Payments Protocol.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/monad/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/monad/refs/heads/main/apis.yml)
+**Areas:** Blockchain · Layer 1 · EVM · High Performance · Parallel Execution · JSON-RPC · MonadBFT · Monad
 
-## Tags
+## Monad on APIs.io
 
-- Blockchain
-- Layer 1
-- EVM
-- High Performance
-- Parallel Execution
-- JSON-RPC
-- MonadBFT
+Everything profiled for Monad is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/monad/](https://apis.io/providers/monad/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (13)
 
-- **Created:** 2026-05-23
-- **Modified:** 2026-05-23
+- [Monad Mainnet JSON-RPC](https://apis.io/apis/monad/mainnet-rpc/) — Public Ethereum-compatible JSON-RPC endpoint for Monad mainnet (chain ID 143, native token MON). Hosted on QuickNode infrastructure with a 25 requests/sec…
+- [Monad Testnet JSON-RPC](https://apis.io/apis/monad/testnet-rpc/) — Public JSON-RPC endpoint for the Monad public testnet, used for application development, integration testing, and validator software validation before…
+- [Monad JSON-RPC API](https://apis.io/apis/monad/json-rpc-api/) — Full JSON-RPC method reference — standard Ethereum eth_*, net_*, web3_*, debug_*, and trace_* methods plus Monad-specific extensions and notes on method…
+- [Monad Staking API](https://apis.io/apis/monad/staking-api/) — API for delegating MON to validators, querying validator stats, undelegating, and reading rewards. Backs delegation UI and external staking integrations.
+- [Monad Machine Payments Protocol](https://apis.io/apis/monad/machine-payments-protocol/) — Protocol specification for programmable machine-to-machine payments on Monad, including account, channel, and settlement primitives.
+- [MonadVision Block Explorer](https://apis.io/apis/monad/monadvision-explorer/) — Block explorer for Monad mainnet — transaction, block, contract, and token lookup with Solidity source verification.
+- [Monadscan Block Explorer](https://apis.io/apis/monad/monadscan-explorer/) — Etherscan-style Monadscan block explorer covering Monad mainnet, with transaction, address, contract, and token analytics.
+- [Socialscan Monad Explorer](https://apis.io/apis/monad/socialscan-explorer/) — Socialscan instance for Monad, offering an alternative explorer view with social and on-chain identity overlays.
+- [Monad Foundry Toolkit](https://apis.io/apis/monad/foundry-toolkit/) — Monad-flavored Foundry toolkit (forge, cast, anvil) for compiling, deploying, scripting, and testing Solidity against Monad mainnet and testnet.
+- [Monad RPC Providers](https://apis.io/apis/monad/rpc-providers/) — Registry of third-party RPC providers supporting Monad — QuickNode, Alchemy, Goldsky Edge, Ankr, MonadInfra — with rate-limit and method-availability…
+- [Monad Indexers](https://apis.io/apis/monad/indexers/) — Indexing options for Monad data — GhostGraph (Graph-style subgraphs), QuickNode Streams, and Envio HyperIndex — for building data backends and analytics on…
+- [Monad Bridges](https://apis.io/apis/monad/bridges/) — Token bridges and cross-chain messaging integrations for moving assets between Ethereum, other chains, and Monad.
+- [Monad JSON RPC API](https://apis.io/apis/monad/monad-monad-json-rpc-api-api/) — The Monad JSON RPC API API from Monad — 1 operation(s) for monad json rpc api.
 
-## APIs
+### Published properties
 
-### Monad Mainnet JSON-RPC
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Public Ethereum-compatible JSON-RPC endpoint for Monad mainnet (chain ID 143, native token MON). Hosted on QuickNode infrastructure with a 25 requests/sec default rate limit; alternative public endpoints are published in the docs.
+#### GraphQL (1)
 
-- **Human URL:** [https://docs.monad.xyz/developer-essentials/network-information](https://docs.monad.xyz/developer-essentials/network-information)
-- **Base URL:** `https://rpc.monad.xyz`
+GraphQL schemas.
 
-#### Tags
+- [Monad GraphQL API](https://apis.io/graphqls/monad/monad-graphql/)
 
-- JSON-RPC
-- Mainnet
-- EVM
+#### MCP servers (1)
 
-#### Properties
+Model Context Protocol servers that expose the API to agents.
 
-- [Documentation](https://docs.monad.xyz/developer-essentials/network-information)
-- [API Reference](https://docs.monad.xyz/reference/json-rpc/api)
-- [Postman Collection](collections/monad.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/monad.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Moved to /providers/monad/](https://apis.io/servers/monad/monad/)
 
-### Monad Testnet JSON-RPC
+#### Agentic access (1)
 
-Public JSON-RPC endpoint for the Monad public testnet, used for application development, integration testing, and validator software validation before deploying to mainnet.
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- **Human URL:** [https://docs.monad.xyz/developer-essentials/testnets](https://docs.monad.xyz/developer-essentials/testnets)
-- **Base URL:** `https://testnet-rpc.monad.xyz`
+- [Monad Agentic Access](https://apis.io/agentic-access/monad/monad-agentic-access/)
 
-#### Tags
+#### Collections (2)
 
-- JSON-RPC
-- Testnet
-- EVM
+Postman and Open Collection request collections.
 
-#### Properties
+- [Monad JSON-RPC API](https://apis.io/collections/monad/open-monad/)
+- [Monad JSON-RPC Monad JSON RPC API API](https://apis.io/collections/monad/open-monad-monad-json-rpc-api-api/)
 
-- [Documentation](https://docs.monad.xyz/developer-essentials/testnets)
-- [API Reference](https://docs.monad.xyz/reference/json-rpc/api)
-- [Postman Collection](collections/monad.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/monad.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Security (1)
 
-### Monad JSON-RPC API
+Authentication, trust centre, and vulnerability disclosure.
 
-Full JSON-RPC method reference — standard Ethereum eth_*, net_*, web3_*, debug_*, and trace_* methods plus Monad-specific extensions and notes on method differences, rate limits, and error codes.
+- [Monad Domain Security](https://apis.io/security/monad/monad-domain-security/)
 
-- **Human URL:** [https://docs.monad.xyz/reference/json-rpc/api](https://docs.monad.xyz/reference/json-rpc/api)
-- **Base URL:** `https://docs.monad.xyz/reference/json-rpc/api`
+#### Plans and pricing (1)
 
-#### Tags
+Published plans, tiers and prices.
 
-- JSON-RPC
-- Reference
-- EVM
+- [Monad Plans Pricing](https://apis.io/plans/monad/monad-plans-pricing/)
 
-#### Properties
+#### Rate limits (1)
 
-- [Documentation](https://docs.monad.xyz/reference/json-rpc/overview)
-- [API Reference](https://docs.monad.xyz/reference/json-rpc/api)
-- [Playground](https://docs.monad.xyz/reference/json-rpc/playground)
-- [Postman Collection](collections/monad.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/monad.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Published request limits.
 
-### Monad Staking API
+- [Monad Rate Limits](https://apis.io/rate-limits/monad/monad-rate-limits/)
 
-API for delegating MON to validators, querying validator stats, undelegating, and reading rewards. Backs delegation UI and external staking integrations.
+#### FinOps (1)
 
-- **Human URL:** [https://docs.monad.xyz/reference/staking/api](https://docs.monad.xyz/reference/staking/api)
-- **Base URL:** `https://docs.monad.xyz/reference/staking/api`
+What the API costs to run, by operation.
 
-#### Tags
+- [Monad Finops](https://apis.io/finops/monad/monad-finops/)
 
-- Staking
-- Validators
-- Rewards
+## Where to find this API
 
-#### Properties
-
-- [Documentation](https://docs.monad.xyz/reference/staking/api)
-- [Postman Collection](collections/monad.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/monad.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Monad Machine Payments Protocol
-
-Protocol specification for programmable machine-to-machine payments on Monad, including account, channel, and settlement primitives.
-
-- **Human URL:** [https://docs.monad.xyz/reference/mpp/overview](https://docs.monad.xyz/reference/mpp/overview)
-- **Base URL:** `https://docs.monad.xyz/reference/mpp/overview`
-
-#### Tags
-
-- MPP
-- Machine Payments
-- Protocol
-
-#### Properties
-
-- [Documentation](https://docs.monad.xyz/reference/mpp/overview)
-- [Postman Collection](collections/monad.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/monad.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### MonadVision Block Explorer
-
-Block explorer for Monad mainnet — transaction, block, contract, and token lookup with Solidity source verification.
-
-- **Human URL:** [https://monadvision.com](https://monadvision.com)
-- **Base URL:** `https://monadvision.com`
-
-#### Tags
-
-- Explorer
-- MonadVision
-- Mainnet
-
-#### Properties
-
-- [Documentation](https://monadvision.com)
-- [Postman Collection](collections/monad.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/monad.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Monadscan Block Explorer
-
-Etherscan-style Monadscan block explorer covering Monad mainnet, with transaction, address, contract, and token analytics.
-
-- **Human URL:** [https://monadscan.com](https://monadscan.com)
-- **Base URL:** `https://monadscan.com`
-
-#### Tags
-
-- Explorer
-- Monadscan
-- Mainnet
-
-#### Properties
-
-- [Documentation](https://monadscan.com)
-- [Postman Collection](collections/monad.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/monad.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Socialscan Monad Explorer
-
-Socialscan instance for Monad, offering an alternative explorer view with social and on-chain identity overlays.
-
-- **Human URL:** [https://monad.socialscan.io](https://monad.socialscan.io)
-- **Base URL:** `https://monad.socialscan.io`
-
-#### Tags
-
-- Explorer
-- Socialscan
-
-#### Properties
-
-- [Documentation](https://monad.socialscan.io)
-- [Postman Collection](collections/monad.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/monad.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Monad Foundry Toolkit
-
-Monad-flavored Foundry toolkit (forge, cast, anvil) for compiling, deploying, scripting, and testing Solidity against Monad mainnet and testnet.
-
-- **Human URL:** [https://docs.monad.xyz/tooling-and-infra/toolkits/monad-foundry](https://docs.monad.xyz/tooling-and-infra/toolkits/monad-foundry)
-- **Base URL:** `https://docs.monad.xyz/tooling-and-infra/toolkits/monad-foundry`
-
-#### Tags
-
-- Foundry
-- Tooling
-- Solidity
-
-#### Properties
-
-- [Documentation](https://docs.monad.xyz/tooling-and-infra/toolkits/monad-foundry)
-- [Postman Collection](collections/monad.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/monad.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Monad RPC Providers
-
-Registry of third-party RPC providers supporting Monad — QuickNode, Alchemy, Goldsky Edge, Ankr, MonadInfra — with rate-limit and method-availability differences documented.
-
-- **Human URL:** [https://docs.monad.xyz/tooling-and-infra/rpc-providers](https://docs.monad.xyz/tooling-and-infra/rpc-providers)
-- **Base URL:** `https://docs.monad.xyz/tooling-and-infra/rpc-providers`
-
-#### Tags
-
-- RPC
-- Providers
-- Infrastructure
-
-#### Properties
-
-- [Documentation](https://docs.monad.xyz/tooling-and-infra/rpc-providers)
-- [Postman Collection](collections/monad.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/monad.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Monad Indexers
-
-Indexing options for Monad data — GhostGraph (Graph-style subgraphs), QuickNode Streams, and Envio HyperIndex — for building data backends and analytics on top of Monad.
-
-- **Human URL:** [https://docs.monad.xyz/tooling-and-infra/indexers](https://docs.monad.xyz/tooling-and-infra/indexers)
-- **Base URL:** `https://docs.monad.xyz/tooling-and-infra/indexers`
-
-#### Tags
-
-- Indexers
-- GraphQL
-- Data
-
-#### Properties
-
-- [Documentation](https://docs.monad.xyz/tooling-and-infra/indexers)
-- [Postman Collection](collections/monad.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/monad.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Monad Bridges
-
-Token bridges and cross-chain messaging integrations for moving assets between Ethereum, other chains, and Monad.
-
-- **Human URL:** [https://docs.monad.xyz/developer-essentials/network-information/tokens-and-bridges](https://docs.monad.xyz/developer-essentials/network-information/tokens-and-bridges)
-- **Base URL:** `https://docs.monad.xyz/developer-essentials/network-information/tokens-and-bridges`
-
-#### Tags
-
-- Bridge
-- Cross-Chain
-- Tokens
-
-#### Properties
-
-- [Documentation](https://docs.monad.xyz/developer-essentials/network-information/tokens-and-bridges)
-- [Postman Collection](collections/monad.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/monad.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.monad.xyz)
 - [Documentation](https://docs.monad.xyz)
-- [Getting Started](https://docs.monad.xyz/developer-essentials/network-information)
-- [API Reference](https://docs.monad.xyz/reference/json-rpc/api)
-- [Playground](https://docs.monad.xyz/reference/json-rpc/playground)
-- [App](https://app.monad.xyz)
-- [Visualization](https://gmonads.com)
-- [Explorer](https://monadvision.com)
-- [Git Hub](https://github.com/monad-crypto)
+- [Getting started](https://docs.monad.xyz/developer-essentials/network-information)
+- [API reference](https://docs.monad.xyz/reference/json-rpc/api)
 - [Blog](https://www.monad.xyz/blog)
-- [Twitter](https://x.com/monad)
-- [Discord](https://discord.gg/monad)
-- [Telegram](https://t.me/monad_xyz)
-- [Privacy Policy](https://www.monad.xyz/privacy)
-- [Terms of Service](https://www.monad.xyz/terms)
-- [L L Ms Txt](https://docs.monad.xyz/llms.txt)
+- [Terms of service](https://www.monad.xyz/terms)
+- [Privacy policy](https://www.monad.xyz/privacy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 28.1** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 49.6 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 39.3 |
+| Access clarity | 5.3 |
+
+**Agent readiness 29.0** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/monad/](https://apis.io/providers/monad/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Monad: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/monad/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
